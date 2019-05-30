@@ -132,7 +132,7 @@ public class GUI{
         clusteringLiterationText.setText("Set Jumlah Literasi");
         clusteringClusterText.setText("Set Jumlah Cluster");
         Btn_ClusterGen.setText("Hasilkan Clustering");
-        clusteringNoteText.setText("Note: Literasi Min 25000, Cluster Min 2 Max 10");
+        clusteringNoteText.setText("Note: Literasi Min 100, Cluster Min 2 Max 10");
 
         databaseSQLText.setVisible(false);
         databaseSQL.setVisible(false);
@@ -231,7 +231,7 @@ public class GUI{
                         }
                     }
     
-                    if (!Error && literation < 25000){
+                    if (!Error && literation < 100){
                         Error = true;
                         JOptionPane.showMessageDialog(null, "Literasi terlalu kecil", "Error", JOptionPane.ERROR_MESSAGE);
                     }
