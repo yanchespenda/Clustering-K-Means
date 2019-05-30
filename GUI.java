@@ -598,11 +598,9 @@ public class GUI{
 
     static boolean checkEquality(ArrayList<Integer>[] oldClusters, ArrayList<Integer>[] newClusters) {
 		for(int i=0; i<oldClusters.length; i++) {
-			// Check only lengths first
 			if(oldClusters[i].size() != newClusters[i].size())
 				return false;
 
-			// Check individual values if lengths are equal
 			for(int j=0; j<oldClusters[i].size(); j++)
 				if(oldClusters[i].get(j) != newClusters[i].get(j))
 					return false;
@@ -613,12 +611,10 @@ public class GUI{
 
 	static void resetClusters(ArrayList<Integer>[] oldClusters, ArrayList<Integer>[] newClusters) {
 		for(int i=0; i<newClusters.length; i++) {
-			// Copy newClusters to oldClusters
 			oldClusters[i].clear();
 			for(int index: newClusters[i])
 				oldClusters[i].add(index);
 
-			// Clear newClusters
 			newClusters[i].clear();
 		}
     }
