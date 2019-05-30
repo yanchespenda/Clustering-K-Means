@@ -339,7 +339,7 @@ public class GUI{
     }
 
     public static void DatabaseInfo(boolean isRefresh) {
-        boolean TrySukses = true;
+        boolean TrySukses = false;
         int countTabelRow = 0;
         try {
             if (conn != null) {
@@ -356,9 +356,9 @@ public class GUI{
                 databaseTabelXY.setText(Integer.toString(countTabelRow));
 
                 st.close();
+                TrySukses = true;
             }
         } catch (SQLException ex) {
-            TrySukses = false;
             statusSQL.setText(ex.getMessage());
         }
 
