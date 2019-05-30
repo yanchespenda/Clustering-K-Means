@@ -27,7 +27,7 @@ public class GUI{
 
     private static JPanel homePanel;
 
-    private static JInternalFrame formClustering;
+    // private static JInternalFrame formClustering;
 
     private static String tabelDataJudul[] = {"No","ID","Nilai X","Nilai Y"}; 
     private static DefaultTableModel tabelDataModel = new DefaultTableModel(null, tabelDataJudul); 
@@ -478,9 +478,9 @@ public class GUI{
                 while(true) {
                     updateMeans(oldClusters, means, points);
                     formClusters(newClusters, means, points);
-        
+
                     itr++;
-        
+
                     if(itr > Literation || checkEquality(oldClusters, newClusters))
                         break;
                     else
@@ -554,7 +554,6 @@ public class GUI{
     static void sortPointsByX(double[][] points) {
 		double[] temp;
 
-		// Bubble Sort
 		for(int i=0; i<points.length; i++)
 			for(int j=1; j<(points.length-i); j++)
 				if(points[j-1][0] > points[j][0]) {
@@ -631,7 +630,7 @@ public class GUI{
 			System.out.println(clusterOutput.substring(0, clusterOutput.length()-2) + "]");
 		}
 	}
-    
+
     static void displayOutput(ArrayList<Integer>[] clusterList, double[][] points) {
 		for(int i=0; i<clusterList.length; i++) {
 			int CountPoints = 0;

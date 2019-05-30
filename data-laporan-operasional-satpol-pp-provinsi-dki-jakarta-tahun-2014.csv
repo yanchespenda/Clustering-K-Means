@@ -1,0 +1,127 @@
+kode_rekening,pos_anggaran,sumber_pos_anggaran,tahun,wilayah_kerja,nominal
+8.1,Pendapatan - LO,Pendapatan Asli Daerah - LO,2014-12-31,Provinsi,0
+8.2,Pendapatan - LO,Dana Perimbangan - LO,2014-12-31,Provinsi,0
+9.1.01,Beban Operasi,Beban Pegawai,2014-12-31,Provinsi,0
+9.1.02,Beban Operasi,Beban Persediaan,2014-12-31,Provinsi,0
+9.1.03,Beban Operasi,Beban Barang,2014-12-31,Provinsi,0
+9.1.04,Beban Operasi,Beban Jasa,2014-12-31,Provinsi,0
+9.1.05,Beban Operasi,Beban Pemeliharaan,2014-12-31,Provinsi,0
+9.1.06,Beban Operasi,Beban Perjalanan Dinas,2014-12-31,Provinsi,0
+9.1.07,Beban Operasi,Beban Bunga,2014-12-31,Provinsi,0
+9.1.08,Beban Operasi,Beban Subsidi,2014-12-31,Provinsi,0
+9.1.13,Beban Operasi,Beban Hibah,2014-12-31,Provinsi,0
+9.1.09,Beban Operasi,Beban Bantuan Sosial,2014-12-31,Provinsi,0
+9.1.10,Beban Operasi,Beban Penyusutan dan Amortisasi,2014-12-31,Provinsi,0
+9.1.11,Beban Operasi,Beban Penyisihan Piutang,2014-12-31,Provinsi,0
+9.1.12,Beban Operasi,Beban Lain-lain,2014-12-31,Provinsi,0
+9.2,Beban Transfer,Beban Transfer,2014-12-31,Provinsi,0
+9.3,Defisit Non Operasional,Defisit Penjualan Aset Non Lancar,2014-12-31,Provinsi,0
+9.4,Beban Luar Biasa,Beban Luar Biasa/Beban Tidak terduga,2014-12-31,Provinsi,0
+8.1,Pendapatan - LO,Pendapatan Asli Daerah - LO,2014-12-31,Jakarta Pusat,0
+8.2,Pendapatan - LO,Dana Perimbangan - LO,2014-12-31,Jakarta Pusat,0
+9.1.01,Beban Operasi,Beban Pegawai,2014-12-31,Jakarta Pusat,0
+9.1.02,Beban Operasi,Beban Persediaan,2014-12-31,Jakarta Pusat,0
+9.1.03,Beban Operasi,Beban Barang,2014-12-31,Jakarta Pusat,0
+9.1.04,Beban Operasi,Beban Jasa,2014-12-31,Jakarta Pusat,0
+9.1.05,Beban Operasi,Beban Pemeliharaan,2014-12-31,Jakarta Pusat,0
+9.1.06,Beban Operasi,Beban Perjalanan Dinas,2014-12-31,Jakarta Pusat,0
+9.1.07,Beban Operasi,Beban Bunga,2014-12-31,Jakarta Pusat,0
+9.1.08,Beban Operasi,Beban Subsidi,2014-12-31,Jakarta Pusat,0
+9.1.13,Beban Operasi,Beban Hibah,2014-12-31,Jakarta Pusat,0
+9.1.09,Beban Operasi,Beban Bantuan Sosial,2014-12-31,Jakarta Pusat,0
+9.1.10,Beban Operasi,Beban Penyusutan dan Amortisasi,2014-12-31,Jakarta Pusat,0
+9.1.11,Beban Operasi,Beban Penyisihan Piutang,2014-12-31,Jakarta Pusat,0
+9.1.12,Beban Operasi,Beban Lain-lain,2014-12-31,Jakarta Pusat,0
+9.2,Beban Transfer,Beban Transfer,2014-12-31,Jakarta Pusat,0
+9.3,Defisit Non Operasional,Defisit Penjualan Aset Non Lancar,2014-12-31,Jakarta Pusat,0
+9.4,Beban Luar Biasa,Beban Luar Biasa/Beban Tidak terduga,2014-12-31,Jakarta Pusat,0
+8.1,Pendapatan - LO,Pendapatan Asli Daerah - LO,2014-12-31,Jakarta Utara,0
+8.2,Pendapatan - LO,Dana Perimbangan - LO,2014-12-31,Jakarta Utara,0
+9.1.01,Beban Operasi,Beban Pegawai,2014-12-31,Jakarta Utara,0
+9.1.02,Beban Operasi,Beban Persediaan,2014-12-31,Jakarta Utara,0
+9.1.03,Beban Operasi,Beban Barang,2014-12-31,Jakarta Utara,0
+9.1.04,Beban Operasi,Beban Jasa,2014-12-31,Jakarta Utara,0
+9.1.05,Beban Operasi,Beban Pemeliharaan,2014-12-31,Jakarta Utara,0
+9.1.06,Beban Operasi,Beban Perjalanan Dinas,2014-12-31,Jakarta Utara,0
+9.1.07,Beban Operasi,Beban Bunga,2014-12-31,Jakarta Utara,0
+9.1.08,Beban Operasi,Beban Subsidi,2014-12-31,Jakarta Utara,0
+9.1.13,Beban Operasi,Beban Hibah,2014-12-31,Jakarta Utara,0
+9.1.09,Beban Operasi,Beban Bantuan Sosial,2014-12-31,Jakarta Utara,0
+9.1.10,Beban Operasi,Beban Penyusutan dan Amortisasi,2014-12-31,Jakarta Utara,0
+9.1.11,Beban Operasi,Beban Penyisihan Piutang,2014-12-31,Jakarta Utara,0
+9.1.12,Beban Operasi,Beban Lain-lain,2014-12-31,Jakarta Utara,0
+9.2,Beban Transfer,Beban Transfer,2014-12-31,Jakarta Utara,0
+9.3,Defisit Non Operasional,Defisit Penjualan Aset Non Lancar,2014-12-31,Jakarta Utara,0
+9.4,Beban Luar Biasa,Beban Luar Biasa/Beban Tidak terduga,2014-12-31,Jakarta Utara,0
+8.1,Pendapatan - LO,Pendapatan Asli Daerah - LO,2014-12-31,Jakarta Barat,0
+8.2,Pendapatan - LO,Dana Perimbangan - LO,2014-12-31,Jakarta Barat,0
+9.1.01,Beban Operasi,Beban Pegawai,2014-12-31,Jakarta Barat,0
+9.1.02,Beban Operasi,Beban Persediaan,2014-12-31,Jakarta Barat,0
+9.1.03,Beban Operasi,Beban Barang,2014-12-31,Jakarta Barat,0
+9.1.04,Beban Operasi,Beban Jasa,2014-12-31,Jakarta Barat,0
+9.1.05,Beban Operasi,Beban Pemeliharaan,2014-12-31,Jakarta Barat,0
+9.1.06,Beban Operasi,Beban Perjalanan Dinas,2014-12-31,Jakarta Barat,0
+9.1.07,Beban Operasi,Beban Bunga,2014-12-31,Jakarta Barat,0
+9.1.08,Beban Operasi,Beban Subsidi,2014-12-31,Jakarta Barat,0
+9.1.13,Beban Operasi,Beban Hibah,2014-12-31,Jakarta Barat,0
+9.1.09,Beban Operasi,Beban Bantuan Sosial,2014-12-31,Jakarta Barat,0
+9.1.10,Beban Operasi,Beban Penyusutan dan Amortisasi,2014-12-31,Jakarta Barat,0
+9.1.11,Beban Operasi,Beban Penyisihan Piutang,2014-12-31,Jakarta Barat,0
+9.1.12,Beban Operasi,Beban Lain-lain,2014-12-31,Jakarta Barat,0
+9.2,Beban Transfer,Beban Transfer,2014-12-31,Jakarta Barat,0
+9.3,Defisit Non Operasional,Defisit Penjualan Aset Non Lancar,2014-12-31,Jakarta Barat,0
+9.4,Beban Luar Biasa,Beban Luar Biasa/Beban Tidak terduga,2014-12-31,Jakarta Barat,0
+8.1,Pendapatan - LO,Pendapatan Asli Daerah - LO,2014-12-31,Jakarta Selatan,0
+8.2,Pendapatan - LO,Dana Perimbangan - LO,2014-12-31,Jakarta Selatan,0
+9.1.01,Beban Operasi,Beban Pegawai,2014-12-31,Jakarta Selatan,0
+9.1.02,Beban Operasi,Beban Persediaan,2014-12-31,Jakarta Selatan,0
+9.1.03,Beban Operasi,Beban Barang,2014-12-31,Jakarta Selatan,0
+9.1.04,Beban Operasi,Beban Jasa,2014-12-31,Jakarta Selatan,0
+9.1.05,Beban Operasi,Beban Pemeliharaan,2014-12-31,Jakarta Selatan,0
+9.1.06,Beban Operasi,Beban Perjalanan Dinas,2014-12-31,Jakarta Selatan,0
+9.1.07,Beban Operasi,Beban Bunga,2014-12-31,Jakarta Selatan,0
+9.1.08,Beban Operasi,Beban Subsidi,2014-12-31,Jakarta Selatan,0
+9.1.13,Beban Operasi,Beban Hibah,2014-12-31,Jakarta Selatan,0
+9.1.09,Beban Operasi,Beban Bantuan Sosial,2014-12-31,Jakarta Selatan,0
+9.1.10,Beban Operasi,Beban Penyusutan dan Amortisasi,2014-12-31,Jakarta Selatan,0
+9.1.11,Beban Operasi,Beban Penyisihan Piutang,2014-12-31,Jakarta Selatan,0
+9.1.12,Beban Operasi,Beban Lain-lain,2014-12-31,Jakarta Selatan,0
+9.2,Beban Transfer,Beban Transfer,2014-12-31,Jakarta Selatan,0
+9.3,Defisit Non Operasional,Defisit Penjualan Aset Non Lancar,2014-12-31,Jakarta Selatan,0
+9.4,Beban Luar Biasa,Beban Luar Biasa/Beban Tidak terduga,2014-12-31,Jakarta Selatan,0
+8.1,Pendapatan - LO,Pendapatan Asli Daerah - LO,2014-12-31,Jakarta Timur,0
+8.2,Pendapatan - LO,Dana Perimbangan - LO,2014-12-31,Jakarta Timur,0
+9.1.01,Beban Operasi,Beban Pegawai,2014-12-31,Jakarta Timur,0
+9.1.02,Beban Operasi,Beban Persediaan,2014-12-31,Jakarta Timur,0
+9.1.03,Beban Operasi,Beban Barang,2014-12-31,Jakarta Timur,0
+9.1.04,Beban Operasi,Beban Jasa,2014-12-31,Jakarta Timur,0
+9.1.05,Beban Operasi,Beban Pemeliharaan,2014-12-31,Jakarta Timur,0
+9.1.06,Beban Operasi,Beban Perjalanan Dinas,2014-12-31,Jakarta Timur,0
+9.1.07,Beban Operasi,Beban Bunga,2014-12-31,Jakarta Timur,0
+9.1.08,Beban Operasi,Beban Subsidi,2014-12-31,Jakarta Timur,0
+9.1.13,Beban Operasi,Beban Hibah,2014-12-31,Jakarta Timur,0
+9.1.09,Beban Operasi,Beban Bantuan Sosial,2014-12-31,Jakarta Timur,0
+9.1.10,Beban Operasi,Beban Penyusutan dan Amortisasi,2014-12-31,Jakarta Timur,0
+9.1.11,Beban Operasi,Beban Penyisihan Piutang,2014-12-31,Jakarta Timur,0
+9.1.12,Beban Operasi,Beban Lain-lain,2014-12-31,Jakarta Timur,0
+9.2,Beban Transfer,Beban Transfer,2014-12-31,Jakarta Timur,0
+9.3,Defisit Non Operasional,Defisit Penjualan Aset Non Lancar,2014-12-31,Jakarta Timur,0
+9.4,Beban Luar Biasa,Beban Luar Biasa/Beban Tidak terduga,2014-12-31,Jakarta Timur,0
+8.1,Pendapatan - LO,Pendapatan Asli Daerah - LO,2014-12-31,Kep. Seribu,0
+8.2,Pendapatan - LO,Dana Perimbangan - LO,2014-12-31,Kep. Seribu,0
+9.1.01,Beban Operasi,Beban Pegawai,2014-12-31,Kep. Seribu,0
+9.1.02,Beban Operasi,Beban Persediaan,2014-12-31,Kep. Seribu,0
+9.1.03,Beban Operasi,Beban Barang,2014-12-31,Kep. Seribu,0
+9.1.04,Beban Operasi,Beban Jasa,2014-12-31,Kep. Seribu,0
+9.1.05,Beban Operasi,Beban Pemeliharaan,2014-12-31,Kep. Seribu,0
+9.1.06,Beban Operasi,Beban Perjalanan Dinas,2014-12-31,Kep. Seribu,0
+9.1.07,Beban Operasi,Beban Bunga,2014-12-31,Kep. Seribu,0
+9.1.08,Beban Operasi,Beban Subsidi,2014-12-31,Kep. Seribu,0
+9.1.13,Beban Operasi,Beban Hibah,2014-12-31,Kep. Seribu,0
+9.1.09,Beban Operasi,Beban Bantuan Sosial,2014-12-31,Kep. Seribu,0
+9.1.10,Beban Operasi,Beban Penyusutan dan Amortisasi,2014-12-31,Kep. Seribu,0
+9.1.11,Beban Operasi,Beban Penyisihan Piutang,2014-12-31,Kep. Seribu,0
+9.1.12,Beban Operasi,Beban Lain-lain,2014-12-31,Kep. Seribu,0
+9.2,Beban Transfer,Beban Transfer,2014-12-31,Kep. Seribu,0
+9.3,Defisit Non Operasional,Defisit Penjualan Aset Non Lancar,2014-12-31,Kep. Seribu,0
+9.4,Beban Luar Biasa,Beban Luar Biasa/Beban Tidak terduga,2014-12-31,Kep. Seribu,0

@@ -1,0 +1,205 @@
+bulan,stasiun_pengisian_bahanbakar,jenis_bahanbakar,jumlah_penjualan,penerimaan_pajak
+1,Pertamina,Bio Solar,42407041,10525855948
+1,Pertamina,Solar,23003789,6199987321
+1,Pertamina,Premium,134009663,41428120949
+1,Pertamina,Pertalite,15232000,5229147971
+1,Pertamina,Pertamax,34835000,12816101073
+1,Pertamina,Pertamax Plus,3304000,1346253269
+1,Pertamina,Pertamina Dex,1466000,604557900
+1,Pertamina,Dexlite,0,0
+1,Pertamina,Pertamax Racing,16000,26086956
+1,Pertamina,BBG,63369,542342731
+1,Pertamina,Pertamax Turbo,0,0
+1,Total,Performance 92,872000,321567076
+1,Total,Performance 95,0,66572896
+1,Total,Diesel,96000,39633132
+1,Shell,Diesel,1933637,785990061
+1,Shell,Super,19448864,7082274548
+1,Shell,Vpower,6805287,2756463358
+2,Pertamina,Bio Solar,44608462,10958163897
+2,Pertamina,Solar,15558565,3986308284
+2,Pertamina,Premium,125012500,38359113479
+2,Pertamina,Pertalite,15224000,5048625951
+2,Pertamina,Pertamax,33697000,11982476159
+2,Pertamina,Pertamax Plus,3000000,1180366126
+2,Pertamina,Pertamina Dex,1573000,598926776
+2,Pertamina,Dexlite,0,0
+2,Pertamina,Pertamax Racing,0,0
+2,Pertamina,BBG,98299,487312410
+2,Pertamina,Pertamax Turbo,0,0
+2,Total,Performance 92,898460,318362991
+2,Total,Performance 95,160000,82519977
+2,Total,Diesel,79747,24774235
+2,Shell,Diesel,1876475,712462630
+2,Shell,Super,18892001,6672397552
+2,Shell,Vpower,6617337,2599778052
+3,Pertamina,Bio Solar,46133008,11333165792
+3,Pertamina,Solar,17444310,4696087876
+3,Pertamina,Premium,125980065,38660431746
+3,Pertamina,Pertalite,20712000,6635130249
+3,Pertamina,Pertamax,39376950,13398003300
+3,Pertamina,Pertamax Plus,3576000,1356921786
+3,Pertamina,Pertamina Dex,2160860,808351884
+3,Pertamina,Dexlite,0,0
+3,Pertamina,Pertamax Racing,16000,25043478
+3,Pertamina,BBG,16000,409257608
+3,Pertamina,Pertamax Turbo,0,0
+3,Total,Performance 92,1036452,355381643
+3,Total,Performance 95,209210,81201192
+3,Total,Diesel,117209,44383775
+3,Shell,Diesel,2007466,744632130
+3,Shell,Super,19611920,6687905869
+3,Shell,Vpower,7238196,2763745351
+4,Pertamina,Bio Solar,49905881,11174848524
+4,Pertamina,Solar,22420234,5999613963
+4,Pertamina,Premium,124888500,35673473510
+4,Pertamina,Pertalite,21560000,6655477705
+4,Pertamina,Pertamax,42605000,13984778587
+4,Pertamina,Pertamax Plus,3861000,1418426118
+4,Pertamina,Pertamina Dex,1911000,694451351
+4,Pertamina,Dexlite,224000,65739130
+4,Pertamina,Pertamax Racing,0,0
+4,Pertamina,BBG,74053,466756155
+4,Pertamina,Pertamax Turbo,0,0
+4,Total,Performance 92,1120000,371835188
+4,Total,Performance 95,210287,96278288
+4,Total,Diesel,104000,37467299
+4,Shell,Diesel,2149958,763671591
+4,Shell,Super,19029690,6312349563
+4,Shell,Vpower,8509133,3171315466
+5,Pertamina,Bio Solar,52039173,11652249204
+5,Pertamina,Solar,15056394,4124428700
+5,Pertamina,Premium,125000663,35743459719
+5,Pertamina,Pertalite,22600000,6866051918
+5,Pertamina,Pertamax,45172000,14608406723
+5,Pertamina,Pertamax Plus,3911000,1418482221
+5,Pertamina,Pertamina Dex,2216000,794788998
+5,Pertamina,Dexlite,372000,108234792
+5,Pertamina,Pertamax Racing,0,0
+5,Pertamina,BBG,74049,500992058
+5,Pertamina,Pertamax Turbo,0,0
+5,Total,Performance 92,1120000,367818620
+5,Total,Performance 95,256000,86850832
+5,Total,Diesel,96000,34382420
+5,Shell,Diesel,2241020,790033176
+5,Shell,Super,19322920,6357588623
+5,Shell,Vpower,8292716,3085503307
+6,Pertamina,Bio Solar,51419741,11513904082
+6,Pertamina,Solar,20950591,6275823000
+6,Pertamina,Premium,116686335,33412163939
+6,Pertamina,Pertalite,23360000,7008000000
+6,Pertamina,Pertamax,46600150,14890840327
+6,Pertamina,Pertamax Plus,4255000,1526249938
+6,Pertamina,Pertamina Dex,2378760,850194533
+6,Pertamina,Dexlite,444000,128373932
+6,Pertamina,Pertamax Racing,0,0
+6,Pertamina,BBG,38684,511272825
+6,Pertamina,Pertamax Turbo,0,0
+6,Total,Performance 92,1216000,397126844
+6,Total,Performance 95,232000,98678144
+6,Total,Diesel,112000,40139776
+6,Shell,Diesel,2164426,773502859
+6,Shell,Super,18351073,6165569142
+6,Shell,Vpower,7494261,2858089406
+7,Pertamina,Bio Solar,40268874,9017047952
+7,Pertamina,Solar,15847221,4527946583
+7,Pertamina,Premium,102462163,29251060722
+7,Pertamina,Pertalite,22992000,6897600000
+7,Pertamina,Pertamax,44156750,14110606896
+7,Pertamina,Pertamax Plus,3532000,1266912995
+7,Pertamina,Pertamina Dex,1943000,693453831
+7,Pertamina,Dexlite,316000,91365233
+7,Pertamina,Pertamax Racing,16000,26434782
+7,Pertamina,BBG,83176,489256642
+7,Pertamina,Pertamax Turbo,0,0
+7,Total,Performance 92,1072000,350877004
+7,Total,Performance 95,264000,84037328
+7,Total,Diesel,80000,29043880
+7,Shell,Diesel,1813478,647626198
+7,Shell,Super,16287451,5467872338
+7,Shell,Vpower,6640260,2530581647
+8,Pertamina,Bio Solar,50587759,11328316315
+8,Pertamina,Solar,17540481,5005188385
+8,Pertamina,Premium,108294500,30892258308
+8,Pertamina,Pertalite,33509222,10052766600
+8,Pertamina,Pertamax,52850550,16888563417
+8,Pertamina,Pertamax Plus,2413000,865532573
+8,Pertamina,Pertamina Dex,2468000,873780207
+8,Pertamina,Dexlite,1094000,306795657
+8,Pertamina,Pertamax Racing,16000,25739130
+8,Pertamina,BBG,50246,429014716
+8,Pertamina,Pertamax Turbo,1508000,570417398
+8,Total,Performance 92,1354611,441755444
+8,Total,Performance 95,224000,97773496
+8,Total,Diesel,103346,36858014
+8,Shell,Diesel,2363265,828596475
+8,Shell,Super,19674332,6476185992
+8,Shell,Vpower,7892583,2955138712
+9,Pertamina,Bio Solar,50043698,11205843911
+9,Pertamina,Solar,21187430,6636557381
+9,Pertamina,Premium,93261395,26570465947
+9,Pertamina,Pertalite,42036000,12610800000
+9,Pertamina,Pertamax,51985545,16612184626
+9,Pertamina,Pertamax Plus,0,0
+9,Pertamina,Pertamina Dex,2826160,1004209153
+9,Pertamina,Dexlite,1092000,315730477
+9,Pertamina,Pertamax Racing,0,0
+9,Pertamina,BBG,40683,452751454
+9,Pertamina,Pertamax Turbo,5316000,2010834799
+9,Total,Performance 92,0,0
+9,Total,Performance 95,264000,0
+9,Total,Diesel,0,0
+9,Shell,Diesel,0,0
+9,Shell,Super,0,0
+9,Shell,Vpower,0,0
+10,Pertamina,Bio Solar,0,0
+10,Pertamina,Solar,0,0
+10,Pertamina,Premium,0,0
+10,Pertamina,Pertalite,0,0
+10,Pertamina,Pertamax,0,0
+10,Pertamina,Pertamax Plus,0,0
+10,Pertamina,Pertamina Dex,0,0
+10,Pertamina,Dexlite,0,0
+10,Pertamina,Pertamax Racing,0,0
+10,Pertamina,BBG,0,0
+10,Pertamina,Pertamax Turbo,0,0
+10,Total,Performance 92,0,0
+10,Total,Performance 95,0,0
+10,Total,Diesel,0,0
+10,Shell,Diesel,0,0
+10,Shell,Super,0,0
+10,Shell,Vpower,0,0
+11,Pertamina,Bio Solar,0,0
+11,Pertamina,Solar,0,0
+11,Pertamina,Premium,0,0
+11,Pertamina,Pertalite,0,0
+11,Pertamina,Pertamax,0,0
+11,Pertamina,Pertamax Plus,0,0
+11,Pertamina,Pertamina Dex,0,0
+11,Pertamina,Dexlite,0,0
+11,Pertamina,Pertamax Racing,0,0
+11,Pertamina,BBG,0,0
+11,Pertamina,Pertamax Turbo,0,0
+11,Total,Performance 92,0,0
+11,Total,Performance 95,0,0
+11,Total,Diesel,0,0
+11,Shell,Diesel,0,0
+11,Shell,Super,0,0
+11,Shell,Vpower,0,0
+12,Pertamina,Bio Solar,0,0
+12,Pertamina,Solar,0,0
+12,Pertamina,Premium,0,0
+12,Pertamina,Pertalite,0,0
+12,Pertamina,Pertamax,0,0
+12,Pertamina,Pertamax Plus,0,0
+12,Pertamina,Pertamina Dex,0,0
+12,Pertamina,Dexlite,0,0
+12,Pertamina,Pertamax Racing,0,0
+12,Pertamina,BBG,0,0
+12,Pertamina,Pertamax Turbo,0,0
+12,Total,Performance 92,0,0
+12,Total,Performance 95,0,0
+12,Total,Diesel,0,0
+12,Shell,Diesel,0,0
+12,Shell,Super,0,0
+12,Shell,Vpower,0,0
