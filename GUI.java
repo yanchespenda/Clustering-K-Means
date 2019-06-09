@@ -1,6 +1,6 @@
 import javax.swing.*;
 import javax.swing.event.*;
-import javax.swing.table.*; 
+import javax.swing.table.*;
 import java.awt.*;
 import java.awt.event.*;
 import java.beans.PropertyVetoException;
@@ -16,27 +16,29 @@ import org.knowm.xchart.style.markers.*;
 /**
  * GUI
  */
-public class GUI{
-    final static String StringDriver="com.mysql.cj.jdbc.Driver";
-    final static String StringConnection="jdbc:mysql://localhost:3306/tugas_clustering"; 
-    final static String StringTabelNilai="data_csv_xy";
+public class GUI {
+    final static String StringDriver = "com.mysql.cj.jdbc.Driver";
+    final static String StringConnection = "jdbc:mysql://localhost:3306/tugas_clustering";
+    final static String StringTabelNilai = "data_csv_xy";
     static final String StringConnectionUser = "root";
     static final String StringConnectionPass = "";
 
     private static JFrame mainFrame = new JFrame();
+    private static JFrame frame = new JFrame();
 
     private static JPanel homePanel;
+    private static JPanel chartPanel;
 
     // private static JInternalFrame formClustering;
 
-    private static String tabelDataJudul[] = {"No","ID","Nilai X","Nilai Y"}; 
-    private static DefaultTableModel tabelDataModel = new DefaultTableModel(null, tabelDataJudul); 
+    private static String tabelDataJudul[] = { "No", "ID", "Nilai X", "Nilai Y" };
+    private static DefaultTableModel tabelDataModel = new DefaultTableModel(null, tabelDataJudul);
     private static JTable tabelData = new JTable();
-    private static JScrollPane tabelScrollBar = new JScrollPane(); 
+    private static JScrollPane tabelScrollBar = new JScrollPane();
 
     private static JLabel statusSQL = new JLabel();
     private static JLabel statusSQLText = new JLabel();
-    
+
     private static JLabel databaseSQLText = new JLabel();
     private static JLabel databaseSQL = new JLabel();
 
@@ -50,52 +52,52 @@ public class GUI{
     private static JLabel clusteringClusterText = new JLabel();
     private static JLabel clusteringNoteText = new JLabel();
 
-    private static JTextField clusteringX = new JTextField(); 
-    private static JTextField clusteringY = new JTextField(); 
-    private static JTextField clusteringLiteration = new JTextField(); 
-    private static JTextField clusteringCluster = new JTextField(); 
+    private static JTextField clusteringX = new JTextField();
+    private static JTextField clusteringY = new JTextField();
+    private static JTextField clusteringLiteration = new JTextField();
+    private static JTextField clusteringCluster = new JTextField();
 
-    private static JButton Btn_LiatTabel = new JButton(); 
-    private static JButton Btn_BuatCluster = new JButton(); 
+    private static JButton Btn_LiatTabel = new JButton();
+    private static JButton Btn_BuatCluster = new JButton();
     private static JButton Btn_ClusterGen = new JButton();
 
     private static Connection conn = null;
-    // private static Boolean is_Conected 
+    // private static Boolean is_Conected
 
-    public static void GUI(){
+    public static void GUI() {
         mainFrame.setTitle("Clustering");
         homePanel.setLayout(null);
         mainFrame.setSize(450, 700);
         mainFrame.setResizable(false);
         mainFrame.setDefaultCloseOperation(mainFrame.DISPOSE_ON_CLOSE);
         // setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
-        mainFrame.setLocationRelativeTo(null); 
+        mainFrame.setLocationRelativeTo(null);
         mainFrame.setVisible(true);
 
         tabelData.setModel(tabelDataModel);
-        tabelScrollBar.getViewport().add(tabelData); 
-        tabelData.setEnabled(true); 
-        tabelData.setAutoResizeMode(JTable.AUTO_RESIZE_OFF); 
+        tabelScrollBar.getViewport().add(tabelData);
+        tabelData.setEnabled(true);
+        tabelData.setAutoResizeMode(JTable.AUTO_RESIZE_OFF);
         TableColumn col1 = tabelData.getColumnModel().getColumn(0);
-        col1.setPreferredWidth(50); 
+        col1.setPreferredWidth(50);
         TableColumn col2 = tabelData.getColumnModel().getColumn(1);
-        col2.setPreferredWidth(50); 
+        col2.setPreferredWidth(50);
         TableColumn col3 = tabelData.getColumnModel().getColumn(2);
         col3.setPreferredWidth(100);
         TableColumn col4 = tabelData.getColumnModel().getColumn(3);
         col4.setPreferredWidth(100);
-        DefaultTableCellRenderer tableAlignCenter = new DefaultTableCellRenderer(); 
-        tableAlignCenter.setHorizontalAlignment(JLabel.CENTER); 
-        tabelData.getColumnModel().getColumn(0).setCellRenderer(tableAlignCenter); 
-        tabelData.getColumnModel().getColumn(1).setCellRenderer(tableAlignCenter); 
-        tabelData.getColumnModel().getColumn(2).setCellRenderer(tableAlignCenter); 
-        tabelData.getColumnModel().getColumn(3).setCellRenderer(tableAlignCenter); 
+        DefaultTableCellRenderer tableAlignCenter = new DefaultTableCellRenderer();
+        tableAlignCenter.setHorizontalAlignment(JLabel.CENTER);
+        tabelData.getColumnModel().getColumn(0).setCellRenderer(tableAlignCenter);
+        tabelData.getColumnModel().getColumn(1).setCellRenderer(tableAlignCenter);
+        tabelData.getColumnModel().getColumn(2).setCellRenderer(tableAlignCenter);
+        tabelData.getColumnModel().getColumn(3).setCellRenderer(tableAlignCenter);
         tabelData.setEnabled(false);
-        
-        statusSQLText.setBounds(75, 20, 90, 25); 
-        statusSQL.setBounds(175, 20, 210, 25); 
-        databaseSQLText.setBounds(75, 50, 90, 25); 
-        databaseSQL.setBounds(175, 50, 210, 25); 
+
+        statusSQLText.setBounds(75, 20, 90, 25);
+        statusSQL.setBounds(175, 20, 210, 25);
+        databaseSQLText.setBounds(75, 50, 90, 25);
+        databaseSQL.setBounds(175, 50, 210, 25);
         databaseTabel.setBounds(75, 80, 390, 25);
         databaseTabelXYText.setBounds(75, 110, 90, 25);
         databaseTabelXY.setBounds(175, 110, 210, 25);
@@ -132,7 +134,7 @@ public class GUI{
         clusteringLiterationText.setText("Set Jumlah Literasi");
         clusteringClusterText.setText("Set Jumlah Cluster");
         Btn_ClusterGen.setText("Hasilkan Clustering");
-        clusteringNoteText.setText("Note: Literasi Min 100, Cluster Min 2 Max 10");
+        clusteringNoteText.setText("Note: Literasi Min 5, Cluster Min 2 Max 10");
 
         databaseSQLText.setVisible(false);
         databaseSQL.setVisible(false);
@@ -157,7 +159,8 @@ public class GUI{
         clusteringNoteText.setVisible(false);
 
         Btn_LiatTabel.addActionListener(new ActionListener() {
-            @Override public void actionPerformed(ActionEvent e) {
+            @Override
+            public void actionPerformed(ActionEvent e) {
                 if (tabelScrollBar.isVisible()) {
                     Btn_LiatTabel.setText("Buka Tabel Data");
                     VisTabel(false);
@@ -174,7 +177,8 @@ public class GUI{
         });
 
         Btn_BuatCluster.addActionListener(new ActionListener() {
-            @Override public void actionPerformed(ActionEvent e) {
+            @Override
+            public void actionPerformed(ActionEvent e) {
                 if (clusteringTitle.isVisible()) {
                     Btn_BuatCluster.setText("Buka Form Clustering");
                     VisCluster(false);
@@ -190,37 +194,40 @@ public class GUI{
         });
 
         Btn_ClusterGen.addActionListener(new ActionListener() {
-            @Override public void actionPerformed(ActionEvent e) {
+            @Override
+            public void actionPerformed(ActionEvent e) {
                 boolean Error = false;
                 String nilaiX = clusteringX.getText();
                 String nilaiY = clusteringY.getText();
                 String nilaiLiteration = clusteringLiteration.getText();
                 String nilaiCluster = clusteringCluster.getText();
-                
+
                 if (conn != null) {
                     if (nilaiX.trim().length() == 0) {
                         Error = true;
                         JOptionPane.showMessageDialog(null, "Nilai X harus di isi", "Error", JOptionPane.ERROR_MESSAGE);
                     }
-    
+
                     if (!Error && nilaiY.trim().length() == 0) {
                         Error = true;
                         JOptionPane.showMessageDialog(null, "Nilai Y harus di isi", "Error", JOptionPane.ERROR_MESSAGE);
                     }
-    
+
                     if (!Error && nilaiLiteration.trim().length() == 0) {
                         Error = true;
-                        JOptionPane.showMessageDialog(null, "Jumlah literasi harus di isi", "Error", JOptionPane.ERROR_MESSAGE);
+                        JOptionPane.showMessageDialog(null, "Jumlah literasi harus di isi", "Error",
+                                JOptionPane.ERROR_MESSAGE);
                     }
-    
+
                     if (!Error && nilaiLiteration.trim().length() == 0) {
                         Error = true;
-                        JOptionPane.showMessageDialog(null, "Jumlah cluster harus di isi", "Error", JOptionPane.ERROR_MESSAGE);
+                        JOptionPane.showMessageDialog(null, "Jumlah cluster harus di isi", "Error",
+                                JOptionPane.ERROR_MESSAGE);
                     }
-    
+
                     int literation = 0;
                     int cluster = 0;
-    
+
                     if (!Error) {
                         try {
                             literation = Integer.parseInt(nilaiLiteration);
@@ -230,22 +237,25 @@ public class GUI{
                             JOptionPane.showMessageDialog(null, ex.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
                         }
                     }
-    
-                    if (!Error && literation < 100){
+
+                    if (!Error && literation < 5) {
                         Error = true;
-                        JOptionPane.showMessageDialog(null, "Literasi terlalu kecil", "Error", JOptionPane.ERROR_MESSAGE);
+                        JOptionPane.showMessageDialog(null, "Literasi terlalu kecil", "Error",
+                                JOptionPane.ERROR_MESSAGE);
                     }
-    
-                    if (!Error && cluster < 2){
+
+                    if (!Error && cluster < 2) {
                         Error = true;
-                        JOptionPane.showMessageDialog(null, "Cluster terlalu kecil", "Error", JOptionPane.ERROR_MESSAGE);
+                        JOptionPane.showMessageDialog(null, "Cluster terlalu kecil", "Error",
+                                JOptionPane.ERROR_MESSAGE);
                     }
-    
-                    if (!Error && cluster > 10){
+
+                    if (!Error && cluster > 10) {
                         Error = true;
-                        JOptionPane.showMessageDialog(null, "Cluster terlalu besar", "Error", JOptionPane.ERROR_MESSAGE);
+                        JOptionPane.showMessageDialog(null, "Cluster terlalu besar", "Error",
+                                JOptionPane.ERROR_MESSAGE);
                     }
-    
+
                     if (!Error) {
                         runKMeans(nilaiX, nilaiY, literation, cluster);
                     }
@@ -262,7 +272,7 @@ public class GUI{
         homePanel.add(databaseTabel);
         homePanel.add(databaseTabelXYText);
         homePanel.add(databaseTabelXY);
-        
+
         homePanel.add(Btn_LiatTabel);
         homePanel.add(Btn_BuatCluster);
 
@@ -280,7 +290,7 @@ public class GUI{
         homePanel.add(clusteringLiteration);
         homePanel.add(clusteringCluster);
 
-        mainFrame.getContentPane().add(homePanel); 
+        mainFrame.getContentPane().add(homePanel);
     }
 
     public static void VisTabel(boolean vis) {
@@ -302,10 +312,10 @@ public class GUI{
     }
 
     public static void DatabaseDriver() {
-        try{
+        try {
             statusSQL.setText("Mencari Driver MySQL");
             Class.forName(StringDriver);
-        } catch (ClassNotFoundException ex){
+        } catch (ClassNotFoundException ex) {
             statusSQL.setText(ex.getMessage());
         }
     }
@@ -316,7 +326,7 @@ public class GUI{
 
         try {
             statusSQL.setText("Menghubungkan Koneksi Ke Database");
-            conn =  DriverManager.getConnection(StringConnection, StringConnectionUser, StringConnectionPass);
+            conn = DriverManager.getConnection(StringConnection, StringConnectionUser, StringConnectionPass);
             KoneksiAman = true;
         } catch (SQLException ex) {
             statusSQL.setText(ex.getMessage());
@@ -383,7 +393,9 @@ public class GUI{
             ArrayList<String> queries = new ArrayList<String>();
             while ((line = br.readLine()) != null) {
                 System.out.println("Read lines");
-                queries.add("insert into `" + StringTabelNilai + "` (`nilai_x`, `nilai_y`) values (" + Double.parseDouble(line.split(",")[xAttribute]) + ", " + Double.parseDouble(line.split(",")[yAttribute]) +")");
+                queries.add("insert into `" + StringTabelNilai + "` (`nilai_x`, `nilai_y`) values ("
+                        + Double.parseDouble(line.split(",")[xAttribute]) + ", "
+                        + Double.parseDouble(line.split(",")[yAttribute]) + ")");
             }
 
             Statement st = conn.createStatement();
@@ -403,20 +415,15 @@ public class GUI{
     public static void getTabelData() {
         try {
             if (conn != null) {
-                int index = 0,
-                    nomor = 0;
+                int index = 0, nomor = 0;
                 String q1 = "SELECT id, nilai_x, nilai_y FROM `" + StringTabelNilai + "`";
                 Statement st = conn.createStatement();
                 ResultSet rs = st.executeQuery(q1);
                 tabelDataModel.setRowCount(0);
                 while (rs.next()) {
                     nomor = index + 1;
-                    tabelDataModel.insertRow(index, new Object[]{
-                        nomor,
-                        Integer.toString(rs.getInt("id")),
-                        Double.toString(rs.getDouble("nilai_x")),
-                        Double.toString(rs.getDouble("nilai_y")),
-                    });
+                    tabelDataModel.insertRow(index, new Object[] { nomor, Integer.toString(rs.getInt("id")),
+                            Double.toString(rs.getDouble("nilai_x")), Double.toString(rs.getDouble("nilai_y")), });
                     index++;
                 }
 
@@ -430,9 +437,7 @@ public class GUI{
     public static void runKMeans(String NilaiX, String NilaiY, int Literation, int Cluster) {
         try {
             if (conn != null) {
-                int index = 0,
-                    nomor = 0,
-                    count = 0;
+                int index = 0, nomor = 0, count = 0;
 
                 String q1 = "SELECT COUNT(*) FROM `" + StringTabelNilai + "`";
                 Statement st = conn.createStatement();
@@ -459,15 +464,15 @@ public class GUI{
                 sortPointsByX(points);
 
                 double[][] means = new double[Cluster][2];
-                for(int i2=0; i2<means.length; i2++) {
-                    means[i2][0] = points[(int) (Math.floor((count*1.0/Cluster)/2) + i2*count/Cluster)][0];
-                    means[i2][1] = points[(int) (Math.floor((count*1.0/Cluster)/2) + i2*count/Cluster)][1];
+                for (int i2 = 0; i2 < means.length; i2++) {
+                    means[i2][0] = points[(int) (Math.floor((count * 1.0 / Cluster) / 2) + i2 * count / Cluster)][0];
+                    means[i2][1] = points[(int) (Math.floor((count * 1.0 / Cluster) / 2) + i2 * count / Cluster)][1];
                 }
 
                 ArrayList<Integer>[] oldClusters = new ArrayList[Cluster];
                 ArrayList<Integer>[] newClusters = new ArrayList[Cluster];
 
-                for(int i3=0; i3<Cluster; i3++) {
+                for (int i3 = 0; i3 < Cluster; i3++) {
                     oldClusters[i3] = new ArrayList<Integer>();
                     newClusters[i3] = new ArrayList<Integer>();
                 }
@@ -475,54 +480,34 @@ public class GUI{
                 formClusters(oldClusters, means, points);
                 int itr = 0;
 
-                while(true) {
-                    updateMeans(oldClusters, means, points);
-                    formClusters(newClusters, means, points);
-
-                    itr++;
-
-                    if(itr > Literation || checkEquality(oldClusters, newClusters))
-                        break;
-                    else
-                        resetClusters(oldClusters, newClusters);
-                }
-
-                System.out.println("\nHasil Clustering:");
-                displayOutput(oldClusters, points);
-                System.out.println("\nJumlah baris pada .csv: " + count);
-                System.out.println("\nJumlah Iterations yang di pakai = " + Literation);
-
-                XYChart chart = new XYChartBuilder().width(600).height(600).title("Diagram Scatter (" + count + " data)").xAxisTitle(NilaiX).yAxisTitle(NilaiY).build();
+                XYChart chart = new XYChartBuilder().width(600).height(600).title("Literasi ke-1 (" + count + " data)").xAxisTitle(NilaiX).yAxisTitle(NilaiY).build();
 
                 chart.getStyler().setDefaultSeriesRenderStyle(XYSeriesRenderStyle.Scatter);
                 chart.getStyler().setChartTitleVisible(true);
                 chart.getStyler().setLegendPosition(LegendPosition.OutsideE);
                 chart.getStyler().setMarkerSize(8);
 
+                frame.setLayout(new BorderLayout());
+                frame.setDefaultCloseOperation(frame.DISPOSE_ON_CLOSE);
+
                 for(int i4=0; i4<oldClusters.length; i4++) {
-                    ArrayList<Double> XData = new ArrayList<Double>();
-                    ArrayList<Double> YData = new ArrayList<Double>();
-                    ArrayList<Integer>[] TesterCluster = oldClusters;
-                    for(int index2: TesterCluster[i4]){
-                        XData.add(points[index2][0]);
-                        YData.add(points[index2][1]);
-                    }
+                    double XData[] = new double [1];
+                    double YData[] = new double [1];
                     XYSeries series = chart.addSeries("Cluster ke-" + i4, XData, YData);
                     series.setMarker(SeriesMarkers.CIRCLE);
                 }
-                
+
                 Thread t = new Thread(new Runnable() {
                     @Override
                     public void run() {
                         Runtime.getRuntime().gc();
                         javax.swing.SwingUtilities.invokeLater(new Runnable() {
                             @Override public void run() {
-                                JFrame frame = new JFrame("Diagram");
-                                frame.setLayout(new BorderLayout());
-                                frame.setDefaultCloseOperation(frame.DISPOSE_ON_CLOSE);
-
-                                JPanel chartPanel = new XChartPanel<XYChart>(chart);
+                                chartPanel = new XChartPanel<XYChart>(chart);
                                 frame.add(chartPanel, BorderLayout.CENTER);
+
+                                JPanel chartPanel2 = new XChartPanel<XYChart>(chart);
+                                frame.add(chartPanel2, BorderLayout.CENTER);
 
                                 frame.pack();
                                 frame.setLocationRelativeTo(null); 
@@ -534,6 +519,71 @@ public class GUI{
                 
                 });
                 t.start();
+
+                while (true) {
+                    updateMeans(oldClusters, means, points);
+                    formClusters(newClusters, means, points);
+
+                    itr++;
+
+                    System.out.println("\nHasil Clustering literasi " + itr + ":");
+                    displayOutput(oldClusters, points);
+
+                    /* for(int i4=0; i4<oldClusters.length; i4++) {
+                        ArrayList<Double> XData = new ArrayList<Double>();
+                        ArrayList<Double> YData = new ArrayList<Double>();
+                        ArrayList<Integer>[] TesterCluster = oldClusters;
+                        for(int index2: TesterCluster[i4]){
+                            XData.add(points[index2][0]);
+                            YData.add(points[index2][1]);
+                        }
+                        // chart.updateXYSeries("Cluster ke-" + i4, XData, YData, null);
+                        chart.updateXYSeries("Cluster ke-" + i4, XData, YData, null);
+                        // chart.updateXYSeries(seriesName, newXData, newYData, newErrorBarData);
+                        // XYSeries series = chart.addSeries("Cluster ke-" + i4, XData, YData);
+                        // series.setMarker(SeriesMarkers.CIRCLE);
+                    }
+                    chart.setTitle("Literasi ke-" + itr + " (" + count + " data)"); */
+
+                    // frame.revalidate();
+                    // frame.repaint();
+
+                    /* try {
+                        Thread.sleep(1000);
+                    } catch (InterruptedException e) {
+                        // TODO Auto-generated catch block
+                        e.printStackTrace();
+                    } */
+
+                    if(itr > Literation || checkEquality(oldClusters, newClusters))
+                        break;
+                    else
+                        resetClusters(oldClusters, newClusters);
+                }
+
+                // System.out.println("\nHasil Clustering:");
+                // displayOutput(oldClusters, points);
+                // System.out.println("\nJumlah baris pada .csv: " + count);
+                // System.out.println("\nJumlah Iterations yang di pakai = " + Literation);
+
+
+                for(int i4=0; i4<oldClusters.length; i4++) {
+                    ArrayList<Double> XData = new ArrayList<Double>();
+                    ArrayList<Double> YData = new ArrayList<Double>();
+                    ArrayList<Integer>[] TesterCluster = oldClusters;
+                    for(int index2: TesterCluster[i4]){
+                        XData.add(points[index2][0]);
+                        YData.add(points[index2][1]);
+                    }
+                    chart.updateXYSeries("Cluster ke-" + i4, XData, YData, null);
+                    // XYSeries series = chart.addSeries("Cluster ke-" + i4, XData, YData);
+                    // series.setMarker(SeriesMarkers.CIRCLE);
+                }
+
+                // SwingWrapper<XYChart> sw = new SwingWrapper<XYChart>(chart);;
+                // sw = new SwingWrapper<XYChart>(chart);
+                // sw.displayChart();
+                
 
                 index = 0;
                 nomor = 0;
