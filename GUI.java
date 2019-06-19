@@ -388,7 +388,7 @@ public class GUI {
         try {
             String line;
 
-            BufferedReader br = new BufferedReader(new FileReader("College.csv"));
+            BufferedReader br = new BufferedReader(new FileReader("data_fixed.csv"));
             System.out.println("Read record");
             ArrayList<String> queries = new ArrayList<String>();
             while ((line = br.readLine()) != null) {
